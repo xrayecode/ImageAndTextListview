@@ -1,44 +1,64 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/item_icon"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:maxHeight="80dp"
-        android:maxWidth="80dp"
-        android:src="@drawable/bug" />
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/card_background_selector"
+        android:descendantFocusability="afterDescendants">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Make Shown Here"
-        android:id="@+id/item_txtMake"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/item_icon"
-        android:layout_toEndOf="@+id/item_icon" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:maxHeight="80dp"
+            android:maxWidth="80dp"
+            android:src="@drawable/bug" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Small Text"
-        android:id="@+id/item_txtYear"
-        android:layout_alignBottom="@+id/item_icon"
-        android:layout_toRightOf="@+id/item_icon"
-        android:layout_toEndOf="@+id/item_icon" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Make Shown Here"
+            android:id="@+id/item_txtMake"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/item_icon"
+            android:layout_toEndOf="@+id/item_icon" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Medium Text"
-        android:id="@+id/item_txtCondition"
-        android:layout_alignBottom="@+id/item_txtYear"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/item_txtYear"
+            android:layout_alignBottom="@+id/item_icon"
+            android:layout_toRightOf="@+id/item_icon"
+            android:layout_toEndOf="@+id/item_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/item_txtCondition"
+            android:layout_alignBottom="@+id/item_txtYear"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </LinearLayout>
+</FrameLayout>
+
+
